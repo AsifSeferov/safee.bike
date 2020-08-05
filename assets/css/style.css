@@ -1,0 +1,125 @@
+.container-black{
+    background-color: #000;
+}
+.row{
+    width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.banner-cont{
+    margin: auto;
+    position: relative;
+   
+   
+}
+.banner-cont img{
+    width: 100%;
+  
+}
+.banner-cont a{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+.banner-cont .second-link{
+    position: absolute;
+     left: 50%;
+     top: 360px;
+     transform: translate(-50%);
+     border: 2px solid #fff;
+     color: #fff;
+     text-decoration: none;
+     width: 170px;
+     padding: 10px 0;
+     text-align: center; 
+     font-size: 17px;   
+}
+.banner-cont .second-link:hover{
+    background-color: #fff;
+    color: #2BC955;
+}
+.banner-cont p{
+    position: absolute;
+    right: 30px;
+    bottom:20px;
+    color: #fff;
+    font-size: 12px;
+}
+
+@media(max-width:960px){
+    .container-fluid{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    .container-black{
+        background-color: #fff !important;
+    }
+    .row{
+        width: auto;
+    }
+    .banner-cont .second-link{
+        top: 320px
+    }   
+}
+@media(max-width:800px) {
+    .banner-cont .second-link{
+        top: 280px;
+    }
+}
+@media(max-width:710px) {
+    .banner-cont .second-link{
+        top: 240px;
+        width: 130px;
+        border: 1px solid #fff;
+        font-size: 15px
+    }
+}
+@media(max-width:620px) {
+    .banner-cont .second-link{
+        top: 200px;
+    }
+}
+@media(max-width:530px) {
+    .banner-cont .second-link{
+        top: 160px;
+    }
+    .banner-cont p{
+        font-size: 8px;
+        right: 10px;
+        bottom: 10px;
+    }
+}
+@media(max-width:450px) {
+    .banner-cont .second-link{
+        top: 140px;
+        width: 120px;
+        padding: 6px 0;
+    }
+}
+@media(max-width:396px){
+    .banner-cont .second-link{
+        top: 100px;
+        width: 100px;
+    }
+    .banner-cont p{
+        bottom: 0;
+        font-size: 6px;
+    }
+}
+@media(max-width:650px){
+    .banner-cont a{
+        position: absolute;
+       top: -10px;
+       left: 20px; 
+    }
+    .banner-cont a img{
+        width: 60px;
+        height: 60px;
+    }
+    
+    
+}
+
+
+
+
