@@ -6,6 +6,7 @@
     <title>safee.bike</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/fontawesom/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&family=Cormorant+Upright:wght@300&family=Viga&display=swap" rel="stylesheet">
 
 </head>
@@ -14,7 +15,7 @@
         <div class="row banner-cont" style="max-width:960px">
                 <img src="./assets/img/bike.jpg" alt="">
                 <a class="header-first-link" href="#"><img src="./assets/img/logo.svg" alt=""></a>
-                <a class="header-link" href="#">Order now</a>
+                <a data-toggle="modal" data-target="#exampleModal" class="header-link" href="#">Order now</a>
                 <p>Patent pending <br>PCT/AZ2018/000004 </p>
         </div>
     </div>
@@ -43,7 +44,7 @@
                     Safee is a sign projector concept designed for the safety of bike riders while they are riding
                     at night.With Safee, the rider can project the relevant warning signs on his back.
                 </p>
-                <a class="order-div" href="#">Order now</a>
+                <a data-toggle="modal" data-target="#exampleModal" class="order-div" href="#">Order now</a>
             </div>
         </div>
        <h2 class="safee-heading">The Revolutionary Safee project</h2>
@@ -83,9 +84,69 @@
                 <img class="image-logos" src="./assets/img/logo14.png" alt="">
                 <img class="image-logos" src="./assets/img/logo15.png" alt="">
                 <img class="image-logos" src="./assets/img/logo16.png" alt="">
+                <p class="paragraf-cycle">And <a class="paragraf-cycle-link" href="https://www.google.com/search?q=cyclee" target="_blank"> 400.000+ </a> Google search results...</p>
+                <a data-toggle="modal" data-target="#exampleModal" class="order-now-2" href="#">Order now</a>
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="container-fluid container-black-2">
+            <div class="row" style="max-width: 960px; margin: auto;">
+                <div class="col-12">
+                    <p class="paragraf-subscribe">Subscribe to Safee News</p>
+                    <form action="" method="POST">
+                        <div class="subscribe-div">
+                            <input type="email" name="email" placeholder="Your email address">
+                            <input type="submit" name="submit" value="Subscribe">
+                        </div>
+                    </form>
+                    <p class="email-paragraf">Hello@safee.bike</p>
+                </div>
+            </div>
+        </div>
+        <div class="row end-blog">
+            <div id="copyright" class="col-md-6">
+                <p class="decide-div">© Safee 2018, All Rights Reserved. Website created by <a class="decide-link" href="https://decode.az/">Decode</a></p>
+            </div>
+            <div id="icons-center" class="col-md-6">
+                <div class="social-icons">
+                    <span class="icons">
+                        <a href=""><i class="fab fa-linkedin-in" id="linkedin"></i></a>
+                    </span>
+                    <span class="icons">
+                        <a href="https://twitter.com/login?lang=tr" target="_blank"><i class="fab fa-twitter" id="twitter"></i></a>
+                    </span>
+                    <span class="icons">
+                        <a href="https://www.facebook.com/safee.bike/" target="_blank"><i id="facebook" class="fab fa-facebook-f"></i></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img class="modal-logo" src="./assets/img/logo.svg" alt="" width="155px">
+          <form action="" method="POST" id="modal-form">
+              <input id="modal-input" type="text" name="text" placeholder="Your name" required>
+              <input id="modal-input" type="email" name="email" placeholder="Pleace enter valid email" required>
+              <label id="thanks">
+                We'll send you the link to our Kickstarter page where you can buy Safee up to 40% discounted! 
+              </label>
+              <input type="submit" value="Order now" name="button" id="closebutton">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+   
     
   
 
